@@ -37,12 +37,12 @@
 
 ## History and Plans
 
-[x] Create and upload to AppStore
-[] Create Map Screen with markers of players
-[] Integrate fastlane / firebase
-[] Add Analytics layer
-[] Add UI / Unit tests
-[] SwiftUI
+- [x] Create and upload to AppStore
+- [ ] Create Map Screen with markers of players
+- [ ] Integrate fastlane / firebase
+- [ ] Add Analytics layer
+- [ ] Add UI / Unit tests
+- [ ] SwiftUI
 
 ## Links
 

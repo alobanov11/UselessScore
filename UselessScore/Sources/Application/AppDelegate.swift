@@ -1,7 +1,4 @@
 //
-//  AppDelegate.swift
-//  LiveCounter
-//
 //  Created by Антон Лобанов on 20.09.2020.
 //
 

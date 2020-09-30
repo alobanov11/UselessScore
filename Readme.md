@@ -1,9 +1,9 @@
 # Useless Counter
 
 <p align="center">
-	<img src="Assets/screen-1.png" width="256" />
-	<img src="Assets/screen-2.png" width="256" />
-	<img src="Assets/screen-3.png" width="256" />
+	<img src="Assets/screen-1.PNG" width="256" />
+	<img src="Assets/screen-2.PNG" width="256" />
+	<img src="Assets/screen-3.PNG" width="256" />
 </p>
 
 ## Features

@@ -1,0 +1,124 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ActiveLabel",
+        "repositoryURL": "https://github.com/optonaut/ActiveLabel.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "dacc4cfbcdf511424985ce8a1a9260345bd8f2d5",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "CocoaLumberjack",
+        "repositoryURL": "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+        "state": {
+          "branch": null,
+          "revision": "24deac32cdf5040297ab957dfd938b1a30d4b49e",
+          "version": "3.6.2"
+        }
+      },
+      {
+        "package": "DITranquillity",
+        "repositoryURL": "https://github.com/ivlevAstef/DITranquillity.git",
+        "state": {
+          "branch": null,
+          "revision": "84e96156934e2b7f28107c523f81077e482ef6f1",
+          "version": "4.1.1"
+        }
+      },
+      {
+        "package": "Lasso",
+        "repositoryURL": "https://github.com/ww-tech/lasso.git",
+        "state": {
+          "branch": null,
+          "revision": "e6ac40002b9a5cacba9d2834030515792d8aa44b",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "MarqueeLabel",
+        "repositoryURL": "https://github.com/cbpowell/MarqueeLabel",
+        "state": {
+          "branch": null,
+          "revision": "8cd051e549b4fcbc469cc1cb7c55ae10f49caef8",
+          "version": "4.0.2"
+        }
+      },
+      {
+        "package": "Networking",
+        "repositoryURL": "https://github.com/3lvis/Networking.git",
+        "state": {
+          "branch": null,
+          "revision": "965493d461d1f3ef785ba0c4f00db95e9faa7e9e",
+          "version": "5.0.3"
+        }
+      },
+      {
+        "package": "NotificationBannerSwift",
+        "repositoryURL": "https://github.com/Daltron/NotificationBanner.git",
+        "state": {
+          "branch": null,
+          "revision": "a852488c04c5bfdb32021711b3dde465ad0899ef",
+          "version": "3.0.4"
+        }
+      },
+      {
+        "package": "NVActivityIndicatorView",
+        "repositoryURL": "https://github.com/ninjaprox/NVActivityIndicatorView.git",
+        "state": {
+          "branch": null,
+          "revision": "cb5ffd2b6ecfef2333e70400d612d71551608c2e",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit.git",
+        "state": {
+          "branch": null,
+          "revision": "aea48ea1855f5d82e2dffa6027afce3aab8f3dd7",
+          "version": "6.13.3"
+        }
+      },
+      {
+        "package": "R.swift.Library",
+        "repositoryURL": "https://github.com/mac-cain13/R.swift.Library",
+        "state": {
+          "branch": null,
+          "revision": "5a54805e3d08077e46edb2274ff27b20b700f568",
+          "version": "5.2.0"
+        }
+      },
+      {
+        "package": "Siren",
+        "repositoryURL": "https://github.com/ArtSabintsev/Siren.git",
+        "state": {
+          "branch": null,
+          "revision": "a24b0ba657567deb3242ef25ed2b8858d860ccf9",
+          "version": "5.4.5"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "SwiftLazy",
+        "repositoryURL": "https://github.com/ivlevAstef/SwiftLazy.git",
+        "state": {
+          "branch": null,
+          "revision": "70f0b50542d97212b8bad18075a500537c244abc",
+          "version": "1.1.8"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

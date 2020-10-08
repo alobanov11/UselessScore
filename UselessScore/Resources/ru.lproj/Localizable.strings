@@ -2,6 +2,7 @@
 "common.buy" = "Купить сейчас за %s";
 "common.restore" = "Восстановить покупки";
 "common.back" = "Назад";
+"common.me" = "Я";
 "counter.topSubtitle" = "Топ за все время";
 "counter.amountSubtitle" = "Всего";
 "counter.mySubtitle" = "Мой счет";
@@ -9,6 +10,7 @@
 "counter.multiplier" = "Множитель %s";
 "counter.multiplierInfo" = "У вас последний множитель";
 "counter.multiplierSuccessBuy" = "Успешная покупка множителя";
+"rating.topForAllTime" = "Топ за все время";
 "info.title" = "Информация";
 "error.title" = "Произошла ошибка";
 "error.serverError" = "Ошибка сервера, попробуйте позже";

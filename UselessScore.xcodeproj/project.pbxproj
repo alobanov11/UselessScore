@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E203FCF8252E32F10010DF5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FCF7252E32F10010DF5A /* MainViewController.swift */; };
+		E203FCFC252E36120010DF5A /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FCFB252E36120010DF5A /* MainModule.swift */; };
+		E203FD00252E36920010DF5A /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FCFF252E36920010DF5A /* MainStore.swift */; };
+		E203FD04252E39070010DF5A /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FD03252E39070010DF5A /* MainFlow.swift */; };
+		E203FEFD252F7F2A0010DF5A /* RatingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FEFC252F7F2A0010DF5A /* RatingsRepository.swift */; };
+		E203FF00252F7F750010DF5A /* RatingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FEFF252F7F750010DF5A /* RatingUser.swift */; };
+		E203FF04252F876B0010DF5A /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FF03252F876B0010DF5A /* RatingViewController.swift */; };
+		E203FF07252F87C90010DF5A /* RatingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FF06252F87C90010DF5A /* RatingStore.swift */; };
+		E203FF0A252F88FE0010DF5A /* RatingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FF09252F88FE0010DF5A /* RatingModule.swift */; };
+		E203FF0F252F8F4C0010DF5A /* RatingUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FF0E252F8F4C0010DF5A /* RatingUserTableViewCell.swift */; };
+		E203FF13252F96700010DF5A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203FF12252F96700010DF5A /* SplashViewController.swift */; };
 		E2BE9FAE25248C1400855343 /* AnyViewStore+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE9FAD25248C1400855343 /* AnyViewStore+Ext.swift */; };
 		E2D7253C25176631001EEE23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7253B25176631001EEE23 /* AppDelegate.swift */; };
 		E2D7254025176631001EEE23 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7253F25176631001EEE23 /* CounterViewController.swift */; };
@@ -74,6 +85,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E203FCF7252E32F10010DF5A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E203FCFB252E36120010DF5A /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
+		E203FCFF252E36920010DF5A /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		E203FD03252E39070010DF5A /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		E203FEFC252F7F2A0010DF5A /* RatingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsRepository.swift; sourceTree = "<group>"; };
+		E203FEFF252F7F750010DF5A /* RatingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingUser.swift; sourceTree = "<group>"; };
+		E203FF03252F876B0010DF5A /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		E203FF06252F87C90010DF5A /* RatingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStore.swift; sourceTree = "<group>"; };
+		E203FF09252F88FE0010DF5A /* RatingModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModule.swift; sourceTree = "<group>"; };
+		E203FF0E252F8F4C0010DF5A /* RatingUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingUserTableViewCell.swift; sourceTree = "<group>"; };
+		E203FF12252F96700010DF5A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E220A9C0251B4B99008D9DFC /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E220A9C1251B4B99008D9DFC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E2BE9FAD25248C1400855343 /* AnyViewStore+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyViewStore+Ext.swift"; sourceTree = "<group>"; };
@@ -156,6 +178,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E203FCF6252E32C50010DF5A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E203FCFB252E36120010DF5A /* MainModule.swift */,
+				E203FCFF252E36920010DF5A /* MainStore.swift */,
+				E203FCF7252E32F10010DF5A /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E203FF02252F87570010DF5A /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				E203FF09252F88FE0010DF5A /* RatingModule.swift */,
+				E203FF06252F87C90010DF5A /* RatingStore.swift */,
+				E203FF03252F876B0010DF5A /* RatingViewController.swift */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
 		E29FA78C251D0CBB00C95BE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,8 +275,10 @@
 		E2D7255225176750001EEE23 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E203FCF6252E32C50010DF5A /* Main */,
 				E2F10FD5252386180065CB8E /* BuyProduct */,
 				E2D7257B25176DED001EEE23 /* Counter */,
+				E203FF02252F87570010DF5A /* Rating */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -265,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D7259025177A73001EEE23 /* RootFlow.swift */,
+				E203FD03252E39070010DF5A /* MainFlow.swift */,
 				E2D72585251770CA001EEE23 /* CounterFlow.swift */,
 			);
 			path = Flows;
@@ -287,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D7258925177683001EEE23 /* IncrementModel.swift */,
+				E203FEFF252F7F750010DF5A /* RatingUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +369,8 @@
 				E2D7258225176FF6001EEE23 /* ViewController.swift */,
 				E2D725B92517B822001EEE23 /* Shadow.swift */,
 				E2ECDB7E251B371E0071754C /* IUIMessageDisplayable.swift */,
+				E203FF0E252F8F4C0010DF5A /* RatingUserTableViewCell.swift */,
+				E203FF12252F96700010DF5A /* SplashViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -351,6 +399,7 @@
 			children = (
 				E2F10FE525239BCD0065CB8E /* Purchase */,
 				E2ECDB6E251902EB0071754C /* IncrementRepository.swift */,
+				E203FEFC252F7F2A0010DF5A /* RatingsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -542,8 +591,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F10FC925235C520065CB8E /* Logger.swift in Sources */,
+				E203FCFC252E36120010DF5A /* MainModule.swift in Sources */,
 				E2D7257225176BDF001EEE23 /* Resources.swift in Sources */,
 				E2F10FCD25235E210065CB8E /* PurchasedProductsStorage.swift in Sources */,
+				E203FF07252F87C90010DF5A /* RatingStore.swift in Sources */,
 				E2D725B02517B534001EEE23 /* HyperTextLabel.swift in Sources */,
 				E2ECDB662518F37A0071754C /* Date+Ext.swift in Sources */,
 				E2ECDB6F251902EB0071754C /* IncrementRepository.swift in Sources */,
@@ -554,6 +605,7 @@
 				E2D7257725176CA8001EEE23 /* AppContext.swift in Sources */,
 				E2ECDB7A251B347E0071754C /* Networking+Ext.swift in Sources */,
 				E2F10FCB25235CF10065CB8E /* SKProduct+Ext.swift in Sources */,
+				E203FD04252E39070010DF5A /* MainFlow.swift in Sources */,
 				E2F10FD425237E720065CB8E /* UIButton+Ext.swift in Sources */,
 				E2D725B42517B5E2001EEE23 /* AppConstants.swift in Sources */,
 				E2D72586251770CA001EEE23 /* CounterFlow.swift in Sources */,
@@ -561,13 +613,16 @@
 				E2D725A025179D25001EEE23 /* AppError.swift in Sources */,
 				E2D7258A25177683001EEE23 /* IncrementModel.swift in Sources */,
 				E2F10FE925239C000065CB8E /* SKTransactionRequest.swift in Sources */,
+				E203FF0F252F8F4C0010DF5A /* RatingUserTableViewCell.swift in Sources */,
 				E2D7258025176F45001EEE23 /* CounterStore.swift in Sources */,
 				E2F10FBF252354130065CB8E /* PurchaseRepository.swift in Sources */,
 				E2D7257525176C4A001EEE23 /* RootFramework.swift in Sources */,
 				E2D725A82517A3EC001EEE23 /* UIFont+Ext.swift in Sources */,
 				E2F10FE0252394350065CB8E /* PaymentNotifier.swift in Sources */,
+				E203FF13252F96700010DF5A /* SplashViewController.swift in Sources */,
 				E2ECDB6A2518F63D0071754C /* Throttler.swift in Sources */,
 				E2F10FD72523863E0065CB8E /* BuyProductModule.swift in Sources */,
+				E203FF00252F7F750010DF5A /* RatingUser.swift in Sources */,
 				E2F10FD2252366690065CB8E /* UseCasesFramework.swift in Sources */,
 				E2F10FEB2523A2AB0065CB8E /* SKRestoreTransactionRequest.swift in Sources */,
 				E2D7254025176631001EEE23 /* CounterViewController.swift in Sources */,
@@ -576,17 +631,22 @@
 				E2F10FE4252395A10065CB8E /* NotifiersFramework.swift in Sources */,
 				E2D725962517867F001EEE23 /* UIView+Ext.swift in Sources */,
 				E2F10FE725239BE50065CB8E /* SKProductRequest.swift in Sources */,
+				E203FD00252E36920010DF5A /* MainStore.swift in Sources */,
 				E2D725932517824C001EEE23 /* FlowFactory.swift in Sources */,
 				E2F10FEF252480C70065CB8E /* ScreenFactory.swift in Sources */,
 				E2D7257E25176E55001EEE23 /* CounterModule.swift in Sources */,
 				E2BE9FAE25248C1400855343 /* AnyViewStore+Ext.swift in Sources */,
+				E203FCF8252E32F10010DF5A /* MainViewController.swift in Sources */,
 				E2ECDB712519061F0071754C /* RepositoriesFramework.swift in Sources */,
 				E2F10FD0252366370065CB8E /* IncrementUseCase.swift in Sources */,
 				E2D725BA2517B822001EEE23 /* Shadow.swift in Sources */,
+				E203FF0A252F88FE0010DF5A /* RatingModule.swift in Sources */,
 				E2D7253C25176631001EEE23 /* AppDelegate.swift in Sources */,
 				E2ECDB7F251B371E0071754C /* IUIMessageDisplayable.swift in Sources */,
 				E2ECDB642518F1890071754C /* StoragesFramework.swift in Sources */,
 				E2D725B22517B5A1001EEE23 /* View.swift in Sources */,
+				E203FF04252F876B0010DF5A /* RatingViewController.swift in Sources */,
+				E203FEFD252F7F2A0010DF5A /* RatingsRepository.swift in Sources */,
 				E2ECDB5F2518F0050071754C /* KeyValueStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -739,6 +799,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = LUY4875ZZ2;
 				INFOPLIST_FILE = "$(SRCROOT)/UselessScore/Resources/Info.plist";
@@ -760,6 +821,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = LUY4875ZZ2;
 				INFOPLIST_FILE = "$(SRCROOT)/UselessScore/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

@@ -20,6 +20,7 @@ enum CounterModule: ScreenModule
 	enum Action: Equatable
 	{
 		case viewDidLoad
+		case didTapMenu
 		case didTapIncrement
 		case didTapUpgrade
 		case didReload
@@ -31,6 +32,7 @@ enum CounterModule: ScreenModule
 
 	enum Output: Equatable
 	{
+		case showMenu
 		case buyProduct(SKProduct)
 	}
 

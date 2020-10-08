@@ -58,14 +58,3 @@ private extension BuyProductStore
 			.catch { self.dispatchOutput(.didFailed($0.asAppError)) }
 	}
 }
-
-private extension BuyProductStore
-{
-	func makeState(from model: SKProduct) -> BuyProductModule.State {
-		return .init(
-			title: model.localizedTitle,
-			message: model.localizedDescription,
-			price: model.formattedPrice ?? ""
-		)
-	}
-}

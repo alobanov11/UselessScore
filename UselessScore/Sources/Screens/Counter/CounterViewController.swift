@@ -10,6 +10,13 @@ final class CounterViewController: ViewController, LassoView, IUIMessageDisplaya
 {
 	let store: CounterModule.ViewStore
 
+	private lazy var menuButton: UIButton = {
+		let button = UIButton()
+		button.setImage(R.image.icons.menu(), for: .normal)
+		button.tintColor = R.color.text()
+		return button
+	}()
+
 	private lazy var topAmountLabel: UILabel = {
 		let label = UILabel()
 		label.font = .display2
@@ -255,7 +262,13 @@ final class CounterViewController: ViewController, LassoView, IUIMessageDisplaya
 		super.viewDidLoad()
 
 		self.view.backgroundColor = R.color.background()
-		self.view.addSubview(self.scrollView)
+		self.view.addSubviews([self.scrollView, self.menuButton])
+
+		self.menuButton.pin {
+			$0.width.height.equalTo(44)
+			$0.top.equalTo(self.view.safeArea.top).inset(22)
+			$0.right.equalTo(self.view.safeArea.right).inset(11)
+		}
 
 		self.contentView.pin {
 			$0.height.equalTo(self.view.safeArea.height)
@@ -270,7 +283,10 @@ final class CounterViewController: ViewController, LassoView, IUIMessageDisplaya
 
 private extension CounterViewController
 {
+	// swiftlint:disable function_body_length
 	func setUpBindings() {
+		self.menuButton.bind(to: self.store, action: .didTapMenu)
+
 		self.refreshControl.bind(.valueChanged, to: self.store, action: .didReload)
 
 		self.incrementButton.bind(to: self.store, action: .didTapIncrement)

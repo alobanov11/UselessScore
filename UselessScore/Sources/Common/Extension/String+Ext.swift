@@ -1,7 +1,4 @@
 //
-//  String+Ext.swift
-//  UselessScore
-//
 //  Created by Антон Лобанов on 22.09.2020.
 //
 

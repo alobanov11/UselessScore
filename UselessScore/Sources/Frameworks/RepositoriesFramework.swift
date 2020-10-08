@@ -20,5 +20,9 @@ final class RepositoriesFramework: DIFramework
 		container.register(PurchaseRepository.init)
 			.as(IPurchaseRepository.self)
 			.lifetime(.perContainer(.weak))
+
+		container.register(RatingsRepository.init)
+			.as(IRatingsRepository.self)
+			.lifetime(.perContainer(.weak))
 	}
 }

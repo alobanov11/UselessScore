@@ -32,7 +32,7 @@ final class IncrementRepository
 extension IncrementRepository: IIncrementRepository
 {
 	func load() -> Promise<IncrementModel> {
-		self.cancelLastRequestIfNeeded()
+		self.netwokring.cancel(self.lastRequestID)
 
 		return Promise { seal in
 			self.lastRequestID = self.netwokring.get("load") { [weak self] result in
@@ -63,7 +63,7 @@ extension IncrementRepository: IIncrementRepository
 		let score = (newValue - (self.lastIncrementStorage.value?.counters.total ?? 0))
 		let part = FormDataPart(data: Data("\(score)".encoded.utf8), parameterName: "score")
 
-		self.cancelLastRequestIfNeeded()
+		self.netwokring.cancel(self.lastRequestID)
 
 		return Promise { seal in
 			self.lastRequestID = self.netwokring.post("increment", parts: [part]) { [weak self] result in
@@ -103,10 +103,5 @@ private extension IncrementRepository
 				seal.reject(AppError.cantDecode)
 			}
 		}
-	}
-
-	func cancelLastRequestIfNeeded() {
-		guard let requestID = self.lastRequestID else { return }
-		self.netwokring.cancel(requestID)
 	}
 }

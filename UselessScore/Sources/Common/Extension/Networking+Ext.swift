@@ -6,6 +6,14 @@
 import Foundation
 import Networking
 
+extension Networking
+{
+	func cancel(_ requestID: String?) {
+		guard let requestID = requestID else { return }
+		self.cancel(requestID)
+	}
+}
+
 extension SuccessJSONResponse
 {
 	func map<T: Codable>(_ model: T.Type) throws -> T {

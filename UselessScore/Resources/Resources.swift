@@ -163,9 +163,38 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.image` struct is generated, and contains static references to 0 images.
+  struct image {
+    /// This `R.image.icons` struct is generated, and contains static references to 2 images.
+    struct icons {
+      /// Image `back`.
+      static let back = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icons/back")
+      /// Image `menu`.
+      static let menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "Icons/menu")
+
+      #if os(iOS) || os(tvOS)
+      /// `UIImage(named: "back", bundle: ..., traitCollection: ...)`
+      static func back(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+        return UIKit.UIImage(resource: R.image.icons.back, compatibleWith: traitCollection)
+      }
+      #endif
+
+      #if os(iOS) || os(tvOS)
+      /// `UIImage(named: "menu", bundle: ..., traitCollection: ...)`
+      static func menu(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+        return UIKit.UIImage(resource: R.image.icons.menu, compatibleWith: traitCollection)
+      }
+      #endif
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 22 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 24 localization keys.
     struct localizable {
       /// en translation: An error has occurred
       ///
@@ -203,6 +232,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, ru
       static let infoTitle = Rswift.StringResource(key: "info.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ru"], comment: nil)
+      /// en translation: Me
+      ///
+      /// Locales: en, ru
+      static let commonMe = Rswift.StringResource(key: "common.me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ru"], comment: nil)
       /// en translation: Me today
       ///
       /// Locales: en, ru
@@ -231,6 +264,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, ru
       static let counterMultiplierSuccessBuy = Rswift.StringResource(key: "counter.multiplierSuccessBuy", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ru"], comment: nil)
+      /// en translation: Top for all time
+      ///
+      /// Locales: en, ru
+      static let ratingTopForAllTime = Rswift.StringResource(key: "rating.topForAllTime", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ru"], comment: nil)
       /// en translation: Top in all time
       ///
       /// Locales: en, ru
@@ -393,6 +430,21 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("info.title", bundle: bundle, comment: "")
       }
 
+      /// en translation: Me
+      ///
+      /// Locales: en, ru
+      static func commonMe(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("common.me", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "common.me"
+        }
+
+        return NSLocalizedString("common.me", bundle: bundle, comment: "")
+      }
+
       /// en translation: Me today
       ///
       /// Locales: en, ru
@@ -498,6 +550,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("counter.multiplierSuccessBuy", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Top for all time
+      ///
+      /// Locales: en, ru
+      static func ratingTopForAllTime(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("rating.topForAllTime", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "rating.topForAllTime"
+        }
+
+        return NSLocalizedString("rating.topForAllTime", bundle: bundle, comment: "")
       }
 
       /// en translation: Top in all time

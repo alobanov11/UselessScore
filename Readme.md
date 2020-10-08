@@ -15,6 +15,7 @@
 - Simple [Networking](https://github.com/3lvis/Networking) layer with [PromiseKit](https://github.com/mxcl/PromiseKit)
 - Generate assets with [R.swift](https://github.com/mac-cain13/R.swift.Library)
 - Linted with [Swiftlinter](https://github.com/realm/SwiftLint)
+- Swift package manager
 
 ## Requirements
 
@@ -43,6 +44,8 @@
 - [ ] Add Analytics layer
 - [ ] Add UI / Unit tests
 - [ ] SwiftUI
+- [ ] iOS Widget
+- [ ] Apple Watch app
 
 ## Links
 

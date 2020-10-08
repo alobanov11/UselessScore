@@ -12,12 +12,23 @@ protocol IRootFlow: AnyObject
 
 final class RootFlow
 {
-	private let flowFactory: FlowFactory
-	private let window: UIWindow
+	private enum Constants
+	{
+		static let splashLive: TimeInterval = 1
+	}
 
-	init(window: UIWindow, flowFactory: FlowFactory) {
-		self.flowFactory = flowFactory
+	private let window: UIWindow
+	private let flowFactory: FlowFactory
+	private let ratingsRepository: IRatingsRepository
+
+	init(
+		window: UIWindow,
+		flowFactory: FlowFactory,
+		ratingsRepository: IRatingsRepository
+	) {
 		self.window = window
+		self.flowFactory = flowFactory
+		self.ratingsRepository = ratingsRepository
 		self.window.makeKeyAndVisible()
 	}
 }
@@ -25,13 +36,22 @@ final class RootFlow
 extension RootFlow: IRootFlow
 {
 	func start() {
-		self.runMainFlow()
+		self.runSplash()
 	}
 }
 
 private extension RootFlow
 {
+	func runSplash() {
+		_ = self.ratingsRepository.ratings()
+		let splashViewController = SplashViewController()
+		splashViewController.executeBlock(delay: Constants.splashLive) { [weak self] in
+			self?.runMainFlow()
+		}
+		self.window.rootViewController = splashViewController
+	}
+
 	func runMainFlow() {
-		self.flowFactory.makeCounter().start(with: root(of: self.window))
+		self.flowFactory.makeMain().start(with: root(of: self.window))
 	}
 }

@@ -15,7 +15,8 @@ enum AppConstants
 	static let settingsURL = URL(string: UIApplication.openSettingsURLString)!
 	static let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
 	static let apiURI = Self.constants["API URL"] as! String
-	static let deviceID = UIDevice.current.identifierForVendor?.uuidString ?? ""
+	static let deviceID = UIDevice.current.identifierForVendor!.uuidString
+	static let deviceName = UIDevice.current.name
 	static let salt = Self.constants["Salt"] as! String
 	static let saltDelimeter = Self.constants["Salt delimeter"] as! Int
 	static let products = Self.constants["Products"] as! [String]

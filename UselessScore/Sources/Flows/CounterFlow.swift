@@ -6,7 +6,15 @@ import UIKit
 import Lasso
 import StoreKit
 
-final class CounterFlow: Flow<NoOutputFlow>
+enum CounterFlowModule: FlowModule
+{
+	enum Output: Equatable
+	{
+		case showMenu
+	}
+}
+
+final class CounterFlow: Flow<CounterFlowModule>
 {
 	private let flowFactory: FlowFactory
 	private let screenFactory: ScreenFactory
@@ -20,6 +28,7 @@ final class CounterFlow: Flow<NoOutputFlow>
 		let screen = self.screenFactory.makeCounter()
 		screen.observeOutput { [weak self] output in
 			switch output {
+			case .showMenu: self?.dispatchOutput(.showMenu)
 			case .buyProduct(let product): self?.showBuyProduct(with: product, for: screen)
 			}
 		}

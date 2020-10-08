@@ -2,6 +2,7 @@
 "common.buy" = "Buy now for %s";
 "common.restore" = "Restore purchases";
 "common.back" = "Back";
+"common.me" = "Me";
 "counter.topSubtitle" = "Top in all time";
 "counter.amountSubtitle" = "Total amount";
 "counter.mySubtitle" = "Me today";
@@ -9,6 +10,7 @@
 "counter.multiplier" = "Multiplier %s";
 "counter.multiplierInfo" = "You have max multiplier";
 "counter.multiplierSuccessBuy" = "Success buy multiplier";
+"rating.topForAllTime" = "Top for all time";
 "info.title" = "Information";
 "error.title" = "An error has occurred";
 "error.serverError" = "Server error, please try later";

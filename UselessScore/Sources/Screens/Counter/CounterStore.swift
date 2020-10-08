@@ -31,6 +31,7 @@ final class CounterStore: LassoStore<CounterModule>
 		switch action {
 		case .viewDidLoad, .didReload: self.load()
 		case .didReloadMultipler: self.reloadMultipler()
+		case .didTapMenu: self.dispatchOutput(.showMenu)
 		case .didTapIncrement: self.increment()
 		case .didTapUpgrade: self.upgrade()
 		case .setError(let error): self.setError(error)

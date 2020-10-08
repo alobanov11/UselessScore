@@ -34,12 +34,22 @@ extension AppContext
 	func launch(with options: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		Siren.shared.wail()
 		self.paymentNotifier.startObserving()
-		self.networking.setAuthorizationHeader(token: AppConstants.deviceID.encoded)
+		self.setupNetworking()
 		self.rootFlow.start()
 		return true
 	}
 
 	func willTerminate() {
 		self.paymentNotifier.stopObserving()
+	}
+}
+
+private extension AppContext
+{
+	func setupNetworking() {
+		self.networking.setAuthorizationHeader(token: AppConstants.deviceID.encoded)
+		self.networking.headerFields = [
+			"U-Device-Name": AppConstants.deviceName.base64,
+		]
 	}
 }

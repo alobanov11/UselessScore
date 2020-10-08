@@ -14,6 +14,13 @@ final class FlowFactory
 		self.container = container
 	}
 
+	func makeMain() -> MainFlow {
+		return MainFlow(
+			flowFactory: self,
+			screenFactory: *self.container
+		)
+	}
+
 	func makeCounter() -> CounterFlow {
 		return CounterFlow(
 			flowFactory: self,

@@ -1,5 +1,7 @@
 # Useless Counter
 
+## Project will never be continued.
+
 <p align="center">
 	<img src="Assets/Screenshots/En/Simulator Screen Shot - iPhone 11 Pro Max - 2020-09-30 at 19.30.22.png" width="256" />
 	<img src="Assets/Screenshots/En/Simulator Screen Shot - iPhone 11 Pro Max - 2020-09-30 at 19.32.09.png" width="256" />
@@ -38,7 +40,7 @@
 
 ## History and Plans
 
-- [x] Create and upload to AppStore
+- [x] Create and upload to AppStore `Rejected by apple`
 - [ ] Create Map Screen with markers of players
 - [ ] Integrate fastlane / firebase
 - [ ] Add Analytics layer
